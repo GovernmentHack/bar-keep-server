@@ -7,7 +7,7 @@ ARG TEMPIO_VERSION BUILD_ARCH
 
 ADD package.json /
 
-RUN apk add --no-cache nodejs-npm jq && \
+RUN apk add --no-cache npm jq && \
     npm install --save
 
 # Copy root filesystem
