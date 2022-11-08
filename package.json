@@ -1,0 +1,24 @@
+{
+  "name": "bar-keep-server",
+  "version": "1.0.0",
+  "description": "Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GovernmentHack/bar-keep-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GovernmentHack/bar-keep-server/issues"
+  },
+  "homepage": "https://github.com/GovernmentHack/bar-keep-server#readme",
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "typescript": "4.8.4"
+  }
+}

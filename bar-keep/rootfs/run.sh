@@ -16,5 +16,4 @@ message=$(bashio::config 'message')
 bashio::log.info "${message:="Hello World..."}"
 
 ## Run your program
-exec my_program.sh
-
+node ./build/index.js
