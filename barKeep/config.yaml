@@ -11,9 +11,7 @@ arch:
   - amd64
   - i386
 init: false
-ports:
-  8000/tcp: 8000
 options:
   message: "configured hello world"
 schema:
-  message: str
+  message: "str?"
