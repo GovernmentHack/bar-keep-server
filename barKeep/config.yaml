@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Bar Keep Server
-version: "1.0.0"
+version: "0.0.1"
 slug: barKeepServer
 description: A simple bar keepers recipie book app
 url: "https://github.com/GovernmentHack/bar-keep-server/tree/main/barKeep"
