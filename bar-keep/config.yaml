@@ -3,7 +3,7 @@ name: Bar Keep Server
 version: "0.0.1"
 slug: barKeepServer
 description: A simple bar keepers recipie book app
-url: "https://github.com/GovernmentHack/bar-keep-server/tree/main/barKeep"
+url: "https://github.com/GovernmentHack/bar-keep-server/tree/main/bar-keep"
 arch:
   - armhf
   - armv7
