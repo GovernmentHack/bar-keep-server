@@ -11,7 +11,7 @@ RUN apk add --no-cache \
 
 COPY package.json /
 COPY rootfs /
-RUN cd / && npm install --unsafe-perm
+RUN cd / && npm install --build-from-source --unsafe-perm
 
 RUN chmod a+x /run.sh
 
