@@ -4,7 +4,8 @@
   "description": "Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-watch": "DEV=true ts-node-dev --respawn -- src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,11 @@
   "homepage": "https://github.com/GovernmentHack/bar-keep-server#readme",
   "devDependencies": {
     "@types/node": "18.11.9",
+    "@types/sqlite3": "^3.1.8",
+    "ts-node-dev": "^2.0.0",
     "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.2"
   }
 }
