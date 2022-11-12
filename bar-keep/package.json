@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "run-watch": "DEV=true ts-node-dev --respawn -- src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

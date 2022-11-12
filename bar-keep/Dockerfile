@@ -1,4 +1,3 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
@@ -11,10 +10,9 @@ RUN apk add --no-cache \
     git
 
 COPY package.json /
+COPY rootfs /
 RUN cd / && npm install --unsafe-perm
 
-# Copy root filesystem
-COPY rootfs /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
