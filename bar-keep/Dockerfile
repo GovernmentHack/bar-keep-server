@@ -2,13 +2,16 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-# Execute during the build of the image
-ARG TEMPIO_VERSION BUILD_ARCH
+ENV LANG C.UTF-8
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ADD package.json /
+RUN apk add --no-cache \
+    nodejs \
+    npm \
+    git
 
-RUN apk add --no-cache npm jq && \
-    npm install --save
+COPY package.json /
+RUN cd / && npm install --unsafe-perm
 
 # Copy root filesystem
 COPY rootfs /
